@@ -19,8 +19,8 @@ function scrollActive() {
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
-        sectionTop = current.offsetTop - 58,
-        sectionId = current.getAttribute('id')
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id')
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
@@ -75,7 +75,7 @@ sr.reveal('.topNav');
 sr.reveal('.topTheme');
 sr.reveal('.home_data');
 sr.reveal('.home__handle', { delay: 900 });
-sr.reveal('.home_social',  { delay: 1300, origin: 'bottom' });
+sr.reveal('.home_social', { delay: 1300, origin: 'bottom' });
 sr.reveal('.home_scroll', { delay: 1300, origin: 'bottom' });
 sr.reveal('.nav_menu', { delay: 1300, origin: 'bottom' });
 
